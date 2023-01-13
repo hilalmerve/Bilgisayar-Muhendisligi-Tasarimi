@@ -47,17 +47,22 @@
     </div>
 </div>-->
 
+<div class="" style="background-color: thistle;">
 <form action = "/" method = "POST">
-    <div class="form-group">
+    <div class="form-group row">
+        <div style="width: 100%;">
         <label for="exampleInputEmail1">Enter the Product's Id: </label>
         <input id="code" class="form-control" name="code" placeholder="Product Id">
+    </div>   
     </div>
     <div class="form-group form-check">
     </div>
-        <button type="submit" class="btn btn-primary" name="button" value="Show">Show</button>
-        <button type="submit" class="btn btn-primary" name="button" value="Save">Save</button>
+        <button type="submit" class="btn btn-primary" name="button" value="Show" style="background-color: silver;">Show</button>
+        <button type="submit" class="btn btn-primary" name="button" value="Save" style="background-color: silver;">Save</button>
 </form>
 
+
+<div style="background-color: lightgray;">
 <%if(typeof name != 'undefined'){%> 
     <h3>Product Name: <%=name  %> </h3>
 <% } %> 
@@ -65,8 +70,10 @@
     <h3>Product Price: <%=price  %> </h3>
 <% } %>
 <%if(typeof src != 'undefined'){%> 
-    <h3>Product Image Src: <%=src  %> </h3>
+    <h3>Product Image Src:<a href=<%=src %> target="_blank">  <%=src  %> </a></h3>
 <% } %>
+</div>
+</div>
 
 
 
