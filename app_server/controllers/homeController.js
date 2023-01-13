@@ -65,16 +65,3 @@ module.exports.homePost = function(req, res) {
     }
     run();
 }
-//Kullanıcı istekleri request objesinin içine yerleştirilir.express objesinin bir modülü var. req objesini tarıyor ve parse ediyor. Bizim işimize yarayacak olan kısmı getiriyor.
-//req objeleri parse edilebilmesiiçin body parser modülü yüklenmeli
-// console.log (newProduct);
-//var path = require('path');
-//console.log(links);
-//res.render('home', {username: req.body.username});
-     //console.log(links2);
-            /*console.log(links2[0].urun);
-            const product = {
-                productName: links2[0].productName,
-                productPrice: links2[0].productPrice,
-                productImgSrc: links2[0].productImgSrc
-            }*/
